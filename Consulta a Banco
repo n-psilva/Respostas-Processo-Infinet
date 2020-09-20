@@ -1,0 +1,3 @@
+Select CustomerName From Customers c, Orders o, OrderDetails od, Suppliers s, Products p 
+Where c.CustomerId = o.CustumerId and o.OrderID= od.OrderId and od.ProductID= p.ProductID
+and SupplierID = p.SupplierID and s.Country = 'Brazil' order by c.CustomerName;
